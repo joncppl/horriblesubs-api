@@ -15,7 +15,7 @@ module.exports = class HorribleSubsAPI {
   constructor(args) {
     const options = args.options || defaultOptions;
     const debug = args.debug || false;
-    const cloudflare = args.cloudflate || false;
+    const cloudflare = args.cloudflare || false;
     if (cloudflare) {
       this.cloudflare = true;
       this.request = cloudscraper.request;
